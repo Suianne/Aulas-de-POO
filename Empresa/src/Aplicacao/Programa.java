@@ -32,5 +32,7 @@ public class Programa {
 		System.out.print("Dados atualizados: ");
 		System.out.println(funcionario);
 		
+		sc.close();
+		
 	}
 }

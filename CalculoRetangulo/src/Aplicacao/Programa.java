@@ -20,7 +20,7 @@ public class Programa {
 		Retangulo retangulo = new Retangulo(height, weight);
 		
 		System.out.println(retangulo);
-		
+		sc.close();
 		
 
 	}

@@ -36,6 +36,7 @@ public class Programa {
 		product.removeQuantity(quantity);
 		
 		System.out.println(product);
+		sc.close();
 		
 		
 		

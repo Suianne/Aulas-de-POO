@@ -27,6 +27,8 @@ public class Programa {
 		estudante.calculateAverage(proofNoteOne, proofNoteTwo, proofNoteThree);
 		
 		System.out.println(estudante);
+		
+		sc.close();
 
 	}
 	
