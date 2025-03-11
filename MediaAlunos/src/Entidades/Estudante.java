@@ -2,10 +2,7 @@ package Entidades;
 
 public class Estudante {
 	private String name;
-	private float proofNoteOne;
-	private float proofNoteTwo;
-	private float proofNoteThree;
-	private float average;
+	private float proofNoteOne, proofNoteTwo, proofNoteThree, average;
 	private boolean approval;
 	
 	public Estudante(String name, float proofNoteOne, float proofNoteTwo, float proofNoteThree) {
