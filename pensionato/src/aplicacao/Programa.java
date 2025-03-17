@@ -27,9 +27,11 @@ public class Programa {
 			name = sc.nextLine();
 			System.out.print("Email: ");
 			email = sc.nextLine();
-			System.out.print("Quarto: ");
-			numberOfRoom = sc.nextInt();
-			
+			do {
+				System.out.print("Quarto: ");
+				numberOfRoom = sc.nextInt();
+			} while(numberOfRoom > 0 && numberOfRoom < 10);
+				
 			pensionato[numberOfRoom] = new Room(name, email, numberOfRoom);
 			
 		}
