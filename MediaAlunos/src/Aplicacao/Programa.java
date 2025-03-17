@@ -15,16 +15,24 @@ public class Programa {
 		
 		System.out.print("Nome: ");
 		name = sc.nextLine();
-		System.out.print("Nota 1: ");
-		proofNoteOne = sc.nextFloat();
-		System.out.print("Nota 2: ");
-		proofNoteTwo = sc.nextFloat();
-		System.out.print("Nota 3: ");
-		proofNoteThree = sc.nextFloat();
+		
+		do {
+			System.out.print("Nota 1: ");
+			proofNoteOne = sc.nextFloat(); 
+		} while(proofNoteOne > 30);
+		
+		do {
+			System.out.print("Nota 2: ");
+			proofNoteTwo = sc.nextFloat(); 
+		} while(proofNoteTwo > 35);
+		
+		do {
+			System.out.print("Nota 3: ");
+			proofNoteThree = sc.nextFloat(); 
+		} while(proofNoteThree > 35);
 		
 		Estudante estudante = new Estudante(name, proofNoteOne, proofNoteTwo, proofNoteThree);
 		
-		estudante.calculateAverage(proofNoteOne, proofNoteTwo, proofNoteThree);
 		
 		System.out.println(estudante);
 		

@@ -5,12 +5,17 @@ public class Estudante {
 	private float proofNoteOne, proofNoteTwo, proofNoteThree, average;
 	private boolean approval;
 	
+	public Estudante() {
+		
+	}
+	
 	public Estudante(String name, float proofNoteOne, float proofNoteTwo, float proofNoteThree) {
 		super();
 		this.name = name;
 		this.proofNoteOne = proofNoteOne;
 		this.proofNoteTwo = proofNoteTwo;
 		this.proofNoteThree = proofNoteThree;
+		calculateAverage(proofNoteOne, proofNoteTwo, proofNoteThree);
 	}
 
 	public String getName() {
@@ -27,6 +32,7 @@ public class Estudante {
 
 	public void setProofNoteOne(float proofNoteOne) {
 		this.proofNoteOne = proofNoteOne;
+		calculateAverage(proofNoteOne, proofNoteTwo, proofNoteThree);
 	}
 
 	public float getProofNoteTwo() {
@@ -35,6 +41,7 @@ public class Estudante {
 
 	public void setProofNoteTwo(float proofNoteTwo) {
 		this.proofNoteTwo = proofNoteTwo;
+		calculateAverage(proofNoteOne, proofNoteTwo, proofNoteThree);
 	}
 
 	public float getProofNoteThree() {
@@ -43,9 +50,10 @@ public class Estudante {
 
 	public void setProofNoteThree(float proofNoteThree) {
 		this.proofNoteThree = proofNoteThree;
+		calculateAverage(proofNoteOne, proofNoteTwo, proofNoteThree);
 	}
 	
-	public void calculateAverage (float proofNoteOne, float proofNoteTwo, float proofNoteThree) {
+	private void calculateAverage (float proofNoteOne, float proofNoteTwo, float proofNoteThree) {
 		this.average = proofNoteOne + proofNoteTwo + proofNoteThree;
 	}
 	
