@@ -32,7 +32,7 @@ public class Programa {
 				numberOfRoom = sc.nextInt();
 			} while(numberOfRoom > 0 && numberOfRoom < 10);
 				
-			pensionato[numberOfRoom] = new Room(name, email, numberOfRoom);
+			pensionato[numberOfRoom-1] = new Room(name, email);
 			
 		}
 		
