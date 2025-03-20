@@ -18,7 +18,7 @@ public class Programa {
 		
 		Room[] pensionato;
 		
-		pensionato = new Room[9];
+		pensionato = new Room[10];
 		
 		for (int i=0; i < numberOfRooms; i++) {
 			System.out.println("Aluguel #" + (i+1));
