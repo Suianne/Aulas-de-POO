@@ -2,10 +2,10 @@ package Entidades;
 
 public class Funcionarios {
 	private String name;
-	private float grossSalary;
-	private float tax;
+	private Float grossSalary;
+	private Float tax;
 
-	public Funcionarios(String name, float grossSalary, float tax) {
+	public Funcionarios(String name, Float grossSalary, Float tax) {
 		super();
 		this.name = name;
 		this.grossSalary = grossSalary;
@@ -24,7 +24,7 @@ public class Funcionarios {
 		return grossSalary;
 	}
 
-	public void setGrossSalary(float grossSalary) {
+	public void setGrossSalary(Float grossSalary) {
 		this.grossSalary = grossSalary;
 	}
 
@@ -32,7 +32,7 @@ public class Funcionarios {
 		return tax;
 	}
 
-	public void setTax(float tax) {
+	public void setTax(Float tax) {
 		this.tax = tax;
 	}
 	
@@ -40,7 +40,7 @@ public class Funcionarios {
 		return grossSalary - tax;
 	}
 	
-	public void resetGrossSalary(float add) {
+	public void resetGrossSalary(Float add) {
 		this.grossSalary = this.grossSalary + ((add*grossSalary)/100);
 	}
 

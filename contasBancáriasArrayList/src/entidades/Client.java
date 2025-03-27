@@ -1,15 +1,15 @@
 package entidades;
 
 public class Client {
-	private int numberOfAccount;
+	private Integer numberOfAccount;
 	private String name;
-	private float moneyInAccount;
+	private Float moneyInAccount;
 	
 	public Client() {
 		
 	}
 	
-	public Client(int numberOfAccount, String name, float moneyInAccount) {
+	public Client(Integer numberOfAccount, String name, Float moneyInAccount) {
 		super();
 		this.numberOfAccount = numberOfAccount;
 		this.name = name;
@@ -34,12 +34,12 @@ public class Client {
 	}
 	
 	
-	public void depositMoney(float value) {
+	public void depositMoney(Float value) {
 		this.moneyInAccount += value;
 	}
 	
-	public void withdrawMoney (float value) {
-		this.moneyInAccount -= 5.00;
+	public void withdrawMoney (Float value) {
+		this.moneyInAccount = (float) (this.moneyInAccount - 5.00);
 		this.moneyInAccount -= value;
 	}
 

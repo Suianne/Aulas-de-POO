@@ -2,15 +2,14 @@ package Entidades;
 
 public class Estudante {
 	private String name;
-	private float proofNoteOne, proofNoteTwo, proofNoteThree, average;
-	private boolean approval;
+	private Float proofNoteOne, proofNoteTwo, proofNoteThree, average;
+	private Boolean approval;
 	
 	public Estudante() {
 		
 	}
 	
-	public Estudante(String name, float proofNoteOne, float proofNoteTwo, float proofNoteThree) {
-		super();
+	public Estudante(String name, Float proofNoteOne, Float proofNoteTwo, Float proofNoteThree) {
 		this.name = name;
 		this.proofNoteOne = proofNoteOne;
 		this.proofNoteTwo = proofNoteTwo;
@@ -30,7 +29,7 @@ public class Estudante {
 		return proofNoteOne;
 	}
 
-	public void setProofNoteOne(float proofNoteOne) {
+	public void setProofNoteOne(Float proofNoteOne) {
 		this.proofNoteOne = proofNoteOne;
 		calculateAverage(proofNoteOne, proofNoteTwo, proofNoteThree);
 	}
@@ -39,7 +38,7 @@ public class Estudante {
 		return proofNoteTwo;
 	}
 
-	public void setProofNoteTwo(float proofNoteTwo) {
+	public void setProofNoteTwo(Float proofNoteTwo) {
 		this.proofNoteTwo = proofNoteTwo;
 		calculateAverage(proofNoteOne, proofNoteTwo, proofNoteThree);
 	}
@@ -48,12 +47,12 @@ public class Estudante {
 		return proofNoteThree;
 	}
 
-	public void setProofNoteThree(float proofNoteThree) {
+	public void setProofNoteThree(Float proofNoteThree) {
 		this.proofNoteThree = proofNoteThree;
 		calculateAverage(proofNoteOne, proofNoteTwo, proofNoteThree);
 	}
 	
-	private void calculateAverage (float proofNoteOne, float proofNoteTwo, float proofNoteThree) {
+	private void calculateAverage (Float proofNoteOne, Float proofNoteTwo, Float proofNoteThree) {
 		this.average = proofNoteOne + proofNoteTwo + proofNoteThree;
 	}
 	

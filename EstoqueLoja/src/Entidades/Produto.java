@@ -3,10 +3,10 @@ package Entidades;
 public class Produto {
 	
 	private String name;
-	private float price;
-	private int quantity;
+	private Float price;
+	private Integer quantity;
 	
-	public Produto(String name, float price, int quantity) {
+	public Produto(String name, Float price, Integer quantity) {
 		super();
 		this.name = name;
 		this.price = price;
@@ -25,7 +25,7 @@ public class Produto {
 		return price;
 	}
 
-	public void setPrice(float price) {
+	public void setPrice(Float price) {
 		this.price = price;
 	}
 
@@ -33,15 +33,15 @@ public class Produto {
 		return quantity;
 	}
 
-	public void setQuantity(int quantity) {
+	public void setQuantity(Integer quantity) {
 		this.quantity = quantity;
 	}
 	
-	public void addQuantity (int quantity) {
+	public void addQuantity (Integer quantity) {
 		this.quantity = this.quantity + quantity;
 	}
 	
-	public void removeQuantity (int quantity) {
+	public void removeQuantity (Integer quantity) {
 		if (quantity < this.quantity) {
 			this.quantity = this.quantity - quantity;
 		}

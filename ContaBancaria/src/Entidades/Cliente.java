@@ -2,9 +2,9 @@ package Entidades;
 
 public class Cliente {
 	
-	private int numberOfAccount;
+	private Integer numberOfAccount;
 	private String name;
-	private float moneyInAccount;
+	private Float moneyInAccount;
 	
 	public Cliente(int numberOfAccount, String name, float moneyInAccount) {
 		super();
@@ -31,13 +31,13 @@ public class Cliente {
 	}
 	
 	
-	public void depositMoney(float value) {
+	public void depositMoney(Float value) {
 		this.moneyInAccount += value;
 	}
 	
-	public void withdrawMoney (float value) {
-		this.moneyInAccount -= 5.00;
-		this.moneyInAccount -= value;
+	public void withdrawMoney (Float value) {
+		this.moneyInAccount = (float) (this.moneyInAccount - 5.00);
+		this.moneyInAccount = (float) this.moneyInAccount - value;
 	}
 
 	@Override

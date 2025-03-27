@@ -3,7 +3,7 @@ package entidades;
 public class Room {
 	private String name;
 	private String email;
-	private int numberOfRoom;
+	public int numberOfRoom;
 	
 	public Room() {
 		

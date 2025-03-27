@@ -4,8 +4,8 @@ import java.lang.*;
 
 public class Retangulo {
 	
-	private float height;
-	private float weight;
+	private Float height;
+	private Float weight;
 	
 	
 	public Retangulo(float height, float weight) {

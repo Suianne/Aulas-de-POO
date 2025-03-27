@@ -1,11 +1,12 @@
 package aplicacao;
 
-import java.util.*;
 import java.util.ArrayList;
-import java.util.List;
 import java.util.Collections;
-import java.util.stream.Collectors;
+import java.util.List;
+import java.util.Scanner;
+
 import entidades.Room;
+import services.ComparadorDeQuartos;
 
 public class Programa {
 
@@ -43,14 +44,19 @@ public class Programa {
 			//adcionando um dado em um índice específico
 			pensionato.set(numberOfRoom, new Room(name, email, numberOfRoom));
 			
-		}
+			
 		
-		System.out.println("\nQuartos ocupados:");
-		for (int i = 0; i < pensionato.size(); i++) {
-		    if (pensionato.get(i) != null) {
-		        System.out.println(pensionato.get(i));
-		    }
+			
 		}
+		System.out.println();
+		System.out.println("\nQuartos ocupados:");
+		for (Room quarto : pensionato) {
+			if(quarto != null) {
+				System.out.println(quarto);
+			}
+			
+		}
+		  
 		sc.close();
 		
 	}
